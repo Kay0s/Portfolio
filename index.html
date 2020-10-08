@@ -57,11 +57,14 @@
     <div class="row">
     <!-- Only one element in row, so "col-lg-12" -->
     <div class="col-lg-12">
+    <!-- aligns text center -->
       <div class="text-center">
-      <h2>About Me</h2>
-      <img src="./assets/images/kristina.jpg" alt="Kristina Hamilton" class="img-circle">
-      <div class="text-center">
-  <p>A full-stack web developer who thinks user first.</p> 
+        <!-- embeds image as class="card-img-top"-->
+      <img src="./assets/images/kristina.jpg" alt="Kristina Hamilton" class="card-img-top">
+         <!-- defines container type"-->
+      <div class="card-body">
+      <p class="card-text">Kristina Hamilton: A full-stack web developer who thinks user first.</p> 
+  <!-- image class="img-fluid", so image will conform to size of card-->
   <img class="img-fluid" src="./assets/images/users2.jpg" alt="users come first message on computer screen">   
 </div>
 </div>
@@ -70,10 +73,10 @@
     </div>
   </div>
 
-  
     <!-- footer element -->
   <footer class = "footer">
-    <span class="text-muted">&copy</span>Copyright Kristina Hamilton; 2020
+       <!-- "text-muted" so screen reader won't read "&copy" -->
+    <span class="text-muted">&copy</span>Copyright 2020 Kristina Hamilton 
 </footer>
 
   <!-- Scripts (Copied and pasted from getbootstrap.com) required to allow some Bootstrap components, like the Dynamic NavBar, to work.-->

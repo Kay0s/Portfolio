@@ -25,8 +25,8 @@ a:active {
   text-decoration: underline;
 }
 
-/* adjusts the .img-circle size */
-.img-circle {
+/* adjusts the .card-img-top size */
+.card-img-top {
   height: 25%;
   width: 25%;
 }

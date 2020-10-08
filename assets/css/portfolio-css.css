@@ -25,24 +25,19 @@ a:active {
   text-decoration: underline;
 }
 
-/* makes .responsive image size 200px wide by 200px high to match placeholder thumbnail images */
-.responsive {
-  width: 200px;
-  height: 200px;
-}
-
 /* changes border color to black and adds margin space between the top of the card and the bottom of the Navbar */
 /* add padding to the to pand bottom of the card element */
 .card {
  border-color: black; 
  margin-top: 20px;
- padding-bottom: 20px;
- padding-bottom: 20px;
+padding-bottom: 20px;
 }
 
 /* aligns header text to the center */
-.header {
+.header-text {
   text-align: center;
+  font-size: 24px;
+  font-style: bold;
 }
 
 /* .footer is "position: fixed", so it stays fixed to the bottom of the window and not the bottom of the form/container */

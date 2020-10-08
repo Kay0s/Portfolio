@@ -26,9 +26,10 @@ a:active {
 }
 
 /* aligns header text to center and adds margin space at the top of the text to the bottom of the Navbar */
-header {
+.header-text {
   text-align: center;
   margin-top: 20px;
+  font-size: 24px;
 }
 
 /* Style inputs with type="text", select elements and textareas */
