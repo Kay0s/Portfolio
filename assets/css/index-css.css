@@ -1,18 +1,12 @@
-body, html {
-  height: 100%;
+.img-circle {
+  height: 25%;
+  width: 25%;
 }
 
-.hero-image {
-  /* The image used */
- img src="./assets/users";
+.image-fluid {
 
-  /* Full height */
-  height: 100%;
-
-  /* Center and scale the image */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+   height: 5%;
+   width: 5%;
 }
 
 /* .footer is "position: fixed", so it stays fixed to the bottom of the window and not the bottom of the form/container */

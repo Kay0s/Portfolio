@@ -1,3 +1,8 @@
+header {
+  text-align: center;
+  margin-top: 20px;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
@@ -27,11 +32,12 @@ button[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .container {
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: #030202;
-  padding: 20px;
+  padding: 10px;
   min-height: 100%;
-  position:relative;
+  position: relative;
+  margin-top: 20px;
 }
 
 /* .footer is "position: fixed", so it stays fixed to the bottom of the window and not the bottom of the form/container */
