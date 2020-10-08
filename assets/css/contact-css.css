@@ -1,3 +1,31 @@
+/* makes unvisited link yellow witih no underline */
+a:link {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* makes visited link purple with no underline */
+a:visited {
+  color: purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* when mousing over a link, the background will be green and underlined */
+a:hover {
+  background-color: green;
+  text-decoration: underline;
+}
+
+/* makes an active link orange and underlined */
+a:active {
+  color: orange;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* aligns header text to center and adds margin space at the top of the text to the bottom of the Navbar */
 header {
   text-align: center;
   margin-top: 20px;
@@ -49,32 +77,6 @@ height: 60px;
 background-color: darkblue;
 border-top: 30px bold rebeccapurple;
 text-align: center;
-color: red;
+color: white;
 }
 
-/* makes unvisited link yellow witih no underline */
-a:link {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-/* makes visited link purple with no underline */
-a:visited {
-  color: purple;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-/* when mousing over a link, the background will be green and underlined */
-a:hover {
-  background-color: green;
-  text-decoration: underline;
-}
-
-/* makes an active link orange and underlined */
-a:active {
-  color: orange;
-  background-color: transparent;
-  text-decoration: underline;
-}
