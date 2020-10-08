@@ -12,7 +12,7 @@
 
   <!-- Bootstrap CSS (copied and pasted from getbootstrap.com) and custom CSS --> 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!-- Custom CSS adding styling the "footer" and "hero-image" --> 
+  <!-- Custom CSS adding styling to the "footer" and "hero-image" --> 
   <link rel="stylesheet" href="./assets/css/index-css.css">
 
 </head>
@@ -30,46 +30,44 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- ml-auto to adjust NavBar contents to the right -->
       <ul class="nav navbar-nav ml-auto">
-        <!-- text becomes bold so user knows what page they're currently on (index.html/Main) -->
+        <!-- Text becomes bold so user knows what page they're currently on (index.html/Main) -->
         <li class="nav-item active">
           <!-- a href link leading to about.html with Person square icon (saved from getbootstrap.com) -->
-          <a class="nav-link" href="./index.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-            <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-          </svg>About</a>
+          <!-- Person square icon with ARIA role="img" and "alt="About Icon" for screen reader users -->
+          <a class="nav-link" href="./index.html" class="text-info"><img src="./assets/images/person-square.svg" ARIA role="img" alt="About Icon">About</a>
         </li>
         <li class="nav-item">
           <!-- a href link leading to portfolio.html with Layout text sidebar icon (saved from getbootstrap.com) -->
-          <a class="nav-link" href="./portfolio.html" class="text-info"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-layout-text-window" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-            <path fill-rule="evenodd" d="M11 15V4h1v11h-1zm4.5-11H.5V3h15v1zM3 6.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-          </svg>Portfolio</a>
+           <!-- Layout text sidebar icon with ARIA role="img" and "alt="Portfolio Icon" for screen reader users -->
+          <a class="nav-link" href="./portfolio.html" class="text-info"><img src="./assets/images/layout.svg" ARIA role="img" alt="Portfolio Icon">Portfolio</a>
         </li>
         <li class="nav-item">
           <!-- a href link leading to contact.html with Envelope fill icon (saved from getbootstrap.com) -->
-          <a class="nav-link" href="./contact.html"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-          </svg>Contact</a>
+          <!-- Envelop fill icon with ARIA role="img" and "alt="Contact Icon" for screen reader users -->
+          <a class="nav-link" href="./contact.html" class="text-info"><img src="./assets/images/envelope.svg" ARIA role="img" alt="Contact Icon">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 
   <!-- Main Body goes in Container -->
-  <div class="card">
-    <div role="img" title="users come first message on computer screen" class="hero-image"></div>
+  <div class="container">
+    <div clas="card">
     <div class="row">
-      <div class="col-lg-3">
-        <img class="img img-thumbnail" src="http://placehold.it/200x200" alt="Kristina Hamilton">
+      <div class="col-lg-12">
+        <div role="img" title="users come first message on computer screen" class="hero-image"></div>
       </div></div></div>
       <div class="card"></div>
       <div class="col-lg-9">
+        <img class="img img-thumbnail" src="http://placehold.it/200x200" alt="Kristina Hamilton">
         <div class="text-center">
         <h2>About Me</h2>
-        <p>A web page designer who thinks end-user first.</p>
+        <p>A full-stack web developer who thinks user first.</p>
       </div>
     </div>
   </div>
+</div>
+
 
     <!-- footer element -->
   <footer class = "footer">
