@@ -12,7 +12,7 @@
 
   <!-- Bootstrap CSS (copied and pasted from getbootstrap.com) and custom CSS --> 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!-- Custom CSS adding styling to the "footer" and "hero-image" --> 
+  <!-- Custom CSS adding styling to the card, images, paragraph and @media for specific screen sizes --> 
   <link rel="stylesheet" href="./assets/css/index-css.css">
 
 </head>
@@ -34,17 +34,17 @@
         <li class="nav-item active">
           <!-- a href link leading to about.html with Person square icon (saved from getbootstrap.com) -->
           <!-- Person square icon with ARIA role="img" and "alt="About Icon" for screen reader users -->
-          <a class="nav-link" href="./index.html" class="text-info"><img src="./assets/images/person-square.svg" ARIA role="img" alt="About Icon">About</a>
+          <a class="nav-link" href="./index.html"><img src="./assets/images/person-square.svg" alt="About Icon">About</a>
         </li>
         <li class="nav-item">
           <!-- a href link leading to portfolio.html with Layout text sidebar icon (saved from getbootstrap.com) -->
            <!-- Layout text sidebar icon with ARIA role="img" and "alt="Portfolio Icon" for screen reader users -->
-          <a class="nav-link" href="./portfolio.html" class="text-info"><img src="./assets/images/layout.svg" ARIA role="img" alt="Portfolio Icon">Portfolio</a>
+          <a class="nav-link" href="./portfolio.html"><img src="./assets/images/layout.svg" alt="Portfolio Icon">Portfolio</a>
         </li>
         <li class="nav-item">
           <!-- a href link leading to contact.html with Envelope fill icon (saved from getbootstrap.com) -->
           <!-- Envelop fill icon with ARIA role="img" and "alt="Contact Icon" for screen reader users -->
-          <a class="nav-link" href="./contact.html" class="text-info"><img src="./assets/images/envelope.svg" ARIA role="img" alt="Contact Icon">Contact</a>
+          <a class="nav-link" href="./contact.html"><img src="./assets/images/envelope.svg" alt="Contact Icon">Contact</a>
         </li>
       </ul>
     </div>
@@ -54,36 +54,36 @@
   <div class="container">
   <!-- About images go inside the card -->
     <div class="card">
-    <div class="row">
-    <!-- Only one element in row, so "col-lg-12" -->
-    <div class="col-lg-12">
-    <!-- aligns text center -->
-      <div class="text-center">
+       <div class="row">
+       <!-- Two elements in row, so col-sm-12 for small screens/phones and "col-lg-6 for large screen/computer  -->
+       <div class="col-sm-12 col-lg-6">
         <!-- embeds image as class="card-img-top"-->
-      <img src="./assets/images/kristina.jpg" alt="Kristina Hamilton" class="card-img-top">
-         <!-- defines container type"-->
-      <div class="card-body">
-      <p class="card-text">Kristina Hamilton: A full-stack web developer who thinks user first.</p> 
-  <!-- image class="img-fluid", so image will conform to size of card-->
-  <img class="img-fluid" src="./assets/images/users2.jpg" alt="users come first message on computer screen">   
-</div>
-</div>
-    </div>
-    </div>
-    </div>
-  </div>
-
+       <img src="./assets/images/kristina.jpg" alt="Kristina Hamilton" class="card-img-top">
+           <!-- defines container type"-->
+       <p class="text">Kristina Hamilton: A full-stack web developer who thinks user first.</p> 
+       </div>
+       <!-- Two elements in row, so col-sm-12 for small screens/phones and "col-lg-6 for large screen/computer  -->
+       <div class="col-sm-12 col-lg-6 right-box">
+       <!-- image class="img-rounded", so image will be rounded-->
+       <img class="img-rounded" src="./assets/images/users2.jpg" alt="users come first message on computer screen">   
+       </div>
+      </div>
+      </div>
+      </div>
+ 
     <!-- footer element -->
-  <footer class = "footer">
-       <!-- "text-muted" so screen reader won't read "&copy" -->
-    <span class="text-muted">&copy</span>Copyright 2020 Kristina Hamilton 
+<footer class = "footer">
+    <!-- "text-muted" so screen reader won't read "&copy"/copyright symbol -->
+    <span class="text-muted">&copy;</span>Copyright 2020 Kristina Hamilton 
 </footer>
 
   <!-- Scripts (Copied and pasted from getbootstrap.com) required to allow some Bootstrap components, like the Dynamic NavBar, to work.-->
+   <!-- jQuery CDN-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
+  <!-- Bootstrap JavaScript CDN-->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
 </body>

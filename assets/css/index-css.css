@@ -25,10 +25,45 @@ a:active {
   text-decoration: underline;
 }
 
-/* adjusts the .card-img-top size */
+/* creates margin between the top of the card and the Navbar */
+.card {
+  margin-top: 50px;
+  border-color: black;
+}
+
+/* creates padding for the bio-picture/card-img-top from the left side of the card */
 .card-img-top {
-  height: 25%;
-  width: 25%;
+  padding-left: 20px ;
+  margin-top: 20px;
+}
+
+/* align the paragraph text to the center */
+.text {
+  text-align: center;
+}
+
+/* makes the right column flexed and alings the img-rounded to the center*/
+.right-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*rounds the img-rounded's corners*/
+.img-rounded {
+border-radius: 10px; 
+}
+
+/*on screen small screen sizes/below 1200 px the padding on the img-rounded and card-img-top will be removed so the img-rounded
+appears below the card-img-top*/
+@media only screen and (max-width: 1199px) {
+  .img-rounded {
+    padding: 0;
+  }
+  .card-img-top {
+    padding-left: 20px ;
+    margin-top: 20px;
+  }
 }
 
 /* .footer is "position: fixed", so it stays fixed to the bottom of the window and not the bottom of the form/container */
@@ -41,3 +76,4 @@ a:active {
   text-align: center;
   color: white;
 }
+
