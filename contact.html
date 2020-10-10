@@ -41,47 +41,54 @@
           </li>
            <!-- Text becomes bold so user knows what page they're currently on (contact.html/Contact) -->
           <li class="nav-item active">
-            <!-- a href link leading to contact.html with Envelop fill icon (saved from getbootstrap.com) -->
+            <!-- a href link leading to contact.html with Envelope fill icon (saved from getbootstrap.com) -->
              <!-- Envelope fill icon with "alt="Contact Icon" for screen reader users -->
              <a class="nav-link" href="./contact.html"><img src="./assets/images/envelope.svg" alt="Contact Icon">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
-    <!-- header element for semantic purposes and to define font size and alignment-->
-  <header class="header-text">Let's connect</header>
-  <!-- Contact Form code (copied and pasted from WC3) -->
-  <!-- Main Body goes in Container -->
+      <!-- Main Body goes in Container -->
     <div class="container">
+    <!-- header element for semantic purposes and to define font size and alignment-->
       <!-- Contact Form is in a card -->
       <div class="card">
+      <div class="card-body">
+  <!-- Creates header font that's aligned center -->
+  <h1 class="text-center" class="card-title">Let's connect</h1>
+  <!-- Contact Form info from w3schools.com) -->
         <!-- Only element on the page, so col-12 -->
-        <div class="col-12">
+        <div class="col-lg-12">
           <!-- Given "form" semantic for screen reader users and SEO optimization -->
           <form action="action_page.php">
             <!-- Given "label name" semantic for screen reader users -->
+            <div class="form-group">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name.. "/>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name.. "/>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Please fill out this field</div>
 <!-- Given "label name" semantic for screen reader users -->        
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Please fill out this field</div>
 <!-- Given "label name" semantic for screen reader users --> 
-            <label for="country">Country</label>
-            <!-- Example countries added on drop down menu --> 
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-<!-- Given "label name" semantic for screen reader users --> 
-            <label for="subject" class="visuallyhidden">Subject: </label>
-            <textarea id="subject" name="subject" placeholder="Nature of your inquiry.." style="height:50px"></textarea>
-            <button type="submit">Submit</button>
+<div class="form-group">
+  <label for="sel1">Contact regarding:</label>
+  <select class="form-control" id="sel1">
+    <option>Web Development</option>
+    <option>Database Management</option>
+    <option>Server Maintenance</option>
+  </select>
+</div>    
+<!-- <label for="submit" class="visuallyhidden">Submit:</label> -->
+            <a class="btn btn-success" href="mailto:hamilton.kristina@gmail.com" role="button">Email</a>
           </form>
+        </div>
         </div>
       </div>
     </div>
-
+  </div>
  <!-- footer element -->
 <footer class = "footer">
  <span class="text-muted">&copy;</span>Copyright 2020 Kristina Hamilton 

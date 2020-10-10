@@ -27,19 +27,14 @@ a:active {
 
 /* creates margin between the top of the card and the Navbar */
 .card {
-  margin-top: 50px;
+  margin-top: 20px;
   border-color: black;
 }
 
 /* creates padding for the bio-picture/card-img-top from the left side of the card */
 .card-img-top {
   padding-left: 20px ;
-  margin-top: 20px;
-}
-
-/* align the paragraph text to the center */
-.text {
-  text-align: center;
+  margin-top: 10px;
 }
 
 /* makes the right column flexed and alings the img-rounded to the center*/
