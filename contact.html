@@ -11,7 +11,7 @@
  <!-- Bootstrap CSS (copied and pasted from getbootstrap.com) --> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <!-- Custom CSS adding styling to the text boxes, "submit button", "container", and "footer"--> 
+  <!-- Custom CSS adding styling to the text boxes, "email button", and links --> 
     <link rel="stylesheet" type="text/css" href="./assets/css/contact-css.css">
   
   </head>
@@ -49,10 +49,10 @@
       </div>
     </nav>
       <!-- Main Body goes in Container -->
-    <div class="container">
-    <!-- header element for semantic purposes and to define font size and alignment-->
+      <!-- container is rounded with a light blue boarder and is fixed relative to the other elements.  The minimum height is 100% -->
+    <div class="container rounded border-info p-2 fixed-relative" style="min-height: 100%;">
       <!-- Contact Form is in a card -->
-      <div class="card">
+      <div class="card border-info">
       <div class="card-body">
   <!-- Creates header font that's aligned center -->
   <h1 class="text-center">Let's connect</h1>
@@ -67,13 +67,13 @@
             <input type="text" id="fname" name="firstname" placeholder="Your first name.. "/>
             <div class="valid-feedback">Valid</div>
             <div class="invalid-feedback">Please fill out this field</div>
+          </div>
 <!-- Given "label name" semantic for screen reader users -->        
             <label for="lname">Last Name</label>
             <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
             <div class="valid-feedback">Valid</div>
             <div class="invalid-feedback">Please fill out this field</div>
-          </div>
-<!-- Given "label name" semantic for screen reader users --> 
+<!-- Creates drop-down menu with three options --> 
 <div class="form-group">
   <label for="sel1">Contact regarding:</label>
   <select class="form-control" id="sel1">
@@ -83,17 +83,19 @@
   </select>
 </div> 
   </form>
-<!-- <label for="submit" class="visuallyhidden">Submit:</label> -->
-            <a class="btn btn-success bg-dark" href="mailto:hamilton.kristina@gmail.com" role="button">Email</a>
+<!-- creates a link in the button, that once pressed, will initiate email to hamilton.kristina@gmail.com -->
+            <a class="btn btn-success bg-success" href="mailto:hamilton.kristina@gmail.com" role="button">Email</a>
       </div>
         </div>
       </div>
       </div>
- <!-- footer element -->
-<footer class = "footer">
- <span class="text-muted">&copy;</span>Copyright 2020 Kristina Hamilton 
-    </footer>
 
+<!-- footer element -->
+<footer>
+  <!-- "fixed-bottom" so footer is fixed to the bottom of the page, "justify-content-center" aligns wording center, w-100 makes the footer span 100% of the bottom of the page wide-->
+ <!-- text-white makes the font white and bg-info makes the footer light blue -->
+  <footer class="fixed-bottom d-flex justify-content-center w-100 text-white bg-info" style="height:40px">&copy;Copyright 2020 Kristina Hamilton</div>
+</footer>
 
     <!-- Scripts (Copied and pasted from getbootstrap.com) required to allow some Bootstrap components, like the Dynamic NavBar, to work.-->
     <!-- jQuery CDN-->

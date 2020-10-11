@@ -51,32 +51,33 @@
   </nav>
 
   <!-- Main Body goes in Container -->
-  <div class="container">
+  <div class="container rounded border-info mb-1">
   <!-- About images go inside the card -->
-    <div class="card">
+    <div class="card mt-4 border-info">
       <!-- Creates header font that's aligned center -->
   <h1 class="text-center">Kristina Hamilton</h1>
        <div class="row">
        <!-- Two elements in row, so col-sm-12 for small screens/phones and "col-lg-6 for large screen/computer -->
        <div class="col-sm-12 col-lg-6">
         <!-- embeds image as class="card-img-top"-->
-       <img class="card-img-top" src="./assets/images/kristina.jpg" alt="Kristina Hamilton">
+       <img class="card-img-top pl-5 mt-1 pr-4" src="./assets/images/kristina.jpg" alt="Kristina Hamilton">
         <!-- aligns text center -->
        <p class="text-center">A full-stack web developer who thinks user first.</p> 
        </div>
       <!-- Two elements in row, so col-sm-12 for small screens/phones and "col-lg-6 for large screen/computer -->
-       <div class="col-sm-12 col-lg-6 right-box">
-       <!-- image class="img-rounded", so image will be rounded-->
-       <img class="img-rounded" src="./assets/images/users2.jpg" alt="users come first message on computer screen">   
+       <div class="col-sm-12 col-lg-6 d-flex align-items-center justify-content-center">
+       <!-- image class="img-rounded", so image will be rounded and style="width:200px: so the image is 200px wide-->
+       <img class="rounded mx-auto d-block" style="width:200px" src="./assets/images/users2.jpg" alt="users come first message on computer screen">   
        </div>
       </div>
       </div>
       </div>
  
-    <!-- footer element -->
-<footer class = "footer">
-    <!-- "text-muted" so screen reader won't read "&copy"/copyright symbol -->
-    <span class="text-muted">&copy;</span>Copyright 2020 Kristina Hamilton 
+<!-- footer element -->
+<footer>
+  <!-- "fixed-bottom" so footer is fixed to the bottom of the page, "justify-content-center" aligns wording center, w-100 makes the footer span 100% of the bottom of the page wide-->
+ <!-- text-white makes the font white and bg-info makes the footer light blue -->
+  <footer class="fixed-bottom d-flex justify-content-center w-100 text-white bg-info" style="height:40px">&copy;Copyright 2020 Kristina Hamilton</div>
 </footer>
 
   <!-- Scripts (Copied and pasted from getbootstrap.com) required to allow some Bootstrap components, like the Dynamic NavBar, to work.-->

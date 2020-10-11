@@ -27,33 +27,9 @@ a:active {
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
+  width: 100%; /*Full width*/ 
   padding: 12px; /* Some padding */ 
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-}
-
-.container {
-  border-radius: 2px;
-  background-color: #030202;
-  padding: 10px;
-  min-height: 100%;
-  position: relative;
-  margin-top: 5px;
-}
-
-/* .footer is "position: fixed", so it stays fixed to the bottom of the window and not the bottom of the form/container */
-.footer {
-position: fixed;
-bottom: 0;
-width: 100%;
-height: 60px;
-background-color: darkblue;
-text-align: center;
-color: white;
-}
-
-.custom-button {
-background-color: black;
 }

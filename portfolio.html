@@ -12,7 +12,7 @@
 
   <!-- Bootstrap CSS (copied and pasted from getbootstrap.com) --> 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
-  <!-- Custom CSS adding styling to the "footer"--> 
+  <!-- Custom CSS adding styling to the links --> 
   <link rel="stylesheet" href="./assets/css/portfolio-css.css">
 </head> 
 
@@ -42,7 +42,7 @@
         </li>
         <li class="nav-item">
            <!-- a href link leading to contact.html with Envelope fill icon (saved from getbootstrap.com) -->
-           <!-- Envelop fill icon with "alt="Contact Icon" for screen reader users -->
+           <!-- Envelope fill icon with "alt="Contact Icon" for screen reader users -->
            <a class="nav-link" href="./contact.html"><img src="./assets/images/envelope.svg" alt="Contact Icon">Contact</a>
         </li>
       </ul>
@@ -52,14 +52,14 @@
 
   <!-- Main Body goes in Container -->
   <div class="container">
-    <!-- Portfolio images go inside the card -->
-    <div class="card border-info text-white bg success mb-4 mt-4">
+    <!-- card borader-info adds light blue boarder, teft-white makes font white, mb-4 and nt-4 add margin to the top and bottom of the card-->
+    <div class="card border-info text-white mb-4 mt-4">
   <!-- Creates header font that's aligned center -->
   <h1 class="text-center"><a href="https://github.com/Kay0s?tab=repositories">Portfolio - Body of work on Github</a></h1>
+  <!-- <div class="row" follows card -->
     <div class="row">
        <!-- Only one element in row, so "col-lg-12" -->
       <div class="col-lg-12">
-         <!-- header element for semantic purposes-->
            <!-- image class="img-fluid", so image will conform to size of card-->
             <!-- a href with link to GitHub repository of the Horiseon Accessibility Refactor-->
             <a href="https://kay0s.github.io/">Horiseon Accessibility Refactor<img class="img-fluid" src="./assets/images/Horiseon.png" alt="Horiseon Accessibility Refactor"></a>
@@ -70,8 +70,9 @@
 
  <!-- footer element -->
  <footer>
-   <!-- Copyright symbol muted so screen reader will instead read the word-->
-  <span class="text-muted">&copy;</span><div class="fixed-bottom d-flex justify-content-center w-100 text-white bg-info" style="height:40px">Copyright 2020 Kristina Hamilton</div>
+   <!-- "fixed-bottom" so footer is fixed to the bottom of the page, "justify-content-center" aligns wording center, w-100 makes the footer span 100% of the bottom of the page wide-->
+  <!-- text-white makes the font white and bg-info makes the footer light blue -->
+   <footer class="fixed-bottom d-flex justify-content-center w-100 text-white bg-info" style="height:40px">&copy;Copyright 2020 Kristina Hamilton</div>
 </footer>
 
 <!-- Scripts (Copied and pasted from getbootstrap.com) required to allow some Bootstrap components, like the Dynamic NavBar, to work.-->
