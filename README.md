@@ -40,7 +40,7 @@ To showcase my wide array of skills and creativity while still being mobile firs
 ![Screenshot of Index.html at 400 resolution](./index400.png)
 ![Screenshot of Portfolio.html](./portfolio768.png)
 ![Screenshot of Contact.html](./contact992.png)
-![Screenshot of index.html](./capture.png)
+![Screenshot of index.html](./code.png)
 
 
 ## Research Resources
