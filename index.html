@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<!-- help image parameters -->
+<html lang="en-us" style="height:100%">
 
 <head>
 
@@ -17,7 +18,8 @@
 
 </head>
 
-<body>
+<!-- help image parameters) -->
+<body style="height:100%">
 
   <!-- NavBar (copied and pasted from WC3) -->
   <!-- Dynamic NavBar (with Toggler for varying devices) with customized background color (bg-primary) -->
@@ -49,20 +51,22 @@
       </ul>
     </div>
   </nav>
-
+  <!-- background image with class detail to position and determine the height.  also includes class="background-image"screen reader users -->
+  <div role="img" title="background image of water" class="background-image background-position-center background-repeat no" style="height:100%">
   <!-- Main Body goes in Container -->
-  <div class="container rounded border-info mb-1">
-  <!-- About images go inside the card -->
-    <div class="card mt-4 border-info">
+  <!-- <div class="container rounded border-info mb-1"> -->
+    <div class="container">
+  <!-- About images go inside the card with class transparent to add CSS styling to affect the opacity of the card to see the background image-->
+    <div class="card-transparent">
       <!-- Creates header font that's aligned center -->
-  <h1 class="text-center">Kristina Hamilton</h1>
+  <h1 class="text-center text-dark">Kristina Hamilton</h1>
        <div class="row">
        <!-- Two elements in row, so col-sm-12 for small screens/phones and "col-lg-6 for large screen/computer -->
        <div class="col-sm-12 col-lg-6">
         <!-- embeds image as class="card-img-top"-->
        <img class="card-img-top pl-5 mt-1 pr-4" src="./assets/images/kristina.jpg" alt="Kristina Hamilton">
         <!-- aligns text center -->
-       <p class="text-center">A full-stack web developer who thinks user first.</p> 
+       <p class="text-center text-white">A full-stack web developer who thinks user first.  Drawing from her vast background in marketing and user experience, Kristina will ensure you get the solution you need.</p> 
        </div>
       <!-- Two elements in row, so col-sm-12 for small screens/phones and "col-lg-6 for large screen/computer -->
        <div class="col-sm-12 col-lg-6 d-flex align-items-center justify-content-center">
@@ -71,8 +75,8 @@
        </div>
       </div>
       </div>
-      </div>
- 
+
+
 <!-- footer element -->
 <footer>
    <!-- "fixed-bottom" so footer is fixed to the bottom of the page, "justify-content-center" aligns wording center, w-100 makes the footer span 100% of the bottom of the page wide-->
